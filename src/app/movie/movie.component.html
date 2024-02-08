@@ -3,23 +3,23 @@
 
 <div class="min-h-screen bg-gray-100 dark:gray-900" >
     <main>
-        <header class="bg-white dark:bg-gray-800 shadow">
+        <header class="bg-grey dark:bg-gray-800 shadow">
             <div class="max-w-7x1 mx-auto py-6 px-4 sm:px-6 lg:px-8">
                 <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-                    Movies
+                    Movie
                 </h2>
             </div>
         </header>
 
-        <div class="py-12">
+        <div class="py-12 bg-green-100">
             <div class="max-w-7x1 mx-auto sm:p-6 lg:px-8">
-                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="bg-green-900 dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 text-gray-900 dark:text-gray-100">
                         
                         <div class="flex flex-wrap -mx-4">
                             @for(movie of movies; track movie.id) {
                                 <div class="w-full sm:w-1/2 md:w-1/4 xl:w-1/4 px-4 mb-8 dark:text-gray-200">
-                                    <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
+                                    <div class="bg-green-300 dark:bg-gray-900 p-6 rounded-lg shadow-md">
                                         <img [src]="getFullImageUrl(movie.poster_path)" alt="" class="rounded-lg">
                                         <h2 class="text-xl font-bold mb-2">{{movie.original_title}}</h2>
                                     </div>
