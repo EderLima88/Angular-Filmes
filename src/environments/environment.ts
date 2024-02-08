@@ -1,6 +1,6 @@
 export const environment = {
     production: true,
-    apiKey: 'sua chave aqui, your key here',
+    apiKey: 'sua chave aqui, your key here ',
     apiUrl: 'http://api.themoviedb.org/3/discover/movie',
     imgUrl: 'https://image.tmdb.org/t/p/w500/'
 };
